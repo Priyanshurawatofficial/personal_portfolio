@@ -431,11 +431,16 @@ During my Full Stack Development course, I built multiple responsive and interac
                 <form action="https://formsubmit.co/priyanshurawatmaster@gmail.com" method="POST">
                     <h2 class="heading">Contact <span>Me!</span></h2>
                     <div class="field-box">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="number" placeholder="Phone Number" required>
-                        <input type="text" placeholder="Position" required>
-                        <textarea name="" id="" placeholder="Your Message" required></textarea>
+                        <input type="text"  name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="number" name="phone" placeholder="Phone Number" required>
+                        <input type="text" name="position" placeholder="Position" required>
+                        <textarea name="message"  placeholder="Your Message" required></textarea>
+                       <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_subject" value="New Message from Portfolio Form!">
+  
+                    
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
